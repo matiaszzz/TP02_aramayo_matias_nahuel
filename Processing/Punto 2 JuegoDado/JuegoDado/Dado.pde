@@ -1,20 +1,18 @@
 class Dado extends GameObject{
   private int ancho, alto;
   private color colorDado;
-  private String valor;
-  
+
   public Dado(){
     ancho=200;
     alto=200;
     colorDado=#891313;
   }
   
-  public Dado(PVector posicion, int ancho, int alto, color colorDado, String valor){
-    this.posicion=posicion;
+  public Dado(PVector posicion, int ancho, int alto, color colorDado){
+    super(posicion);
     this.ancho=ancho;
     this.alto=alto;
     this.colorDado=colorDado;
-    this.valor=valor;
   }
   
   public void display(){

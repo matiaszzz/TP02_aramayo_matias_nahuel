@@ -3,12 +3,10 @@ class Tablero extends GameObject {
   private int alto;
 
   public Tablero() {
-    ancho=1000;
-    alto=500;
   }
 
   public Tablero(PVector posicion, int ancho, int alto) {
-    this.posicion=posicion;
+    super(posicion);
     this.ancho=ancho;
     this.alto=alto;
   }
