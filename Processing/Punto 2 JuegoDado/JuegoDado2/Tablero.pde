@@ -1,4 +1,5 @@
 class Tablero extends GameObject {
+  private PImage monopolio;
   private int ancho;
   private int alto;
 
@@ -6,13 +7,12 @@ class Tablero extends GameObject {
     super(posicion);
     this.ancho=ancho;
     this.alto=alto;
+    monopolio=loadImage("mn.png");
+    this.monopolio = loadImage("mn.png");
   }
 
   public void display() {
-    strokeWeight(3);
-    stroke(0);
-    fill(#0051FA);
-    rect(this.posicion.x, this.posicion.y, ancho, alto);
+    image(monopolio, this.posicion.x, this.posicion.y,ancho, alto);
   }
 
 }
