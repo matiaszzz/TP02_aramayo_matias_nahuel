@@ -3,9 +3,10 @@ abstract class GameObject{
   
   public abstract void display();
   
-  public PVector getPosicion(){
-   return this.posicion=posicion;
+  public GameObject(PVector posicion){
+    this.posicion=posicion;
   }
+ 
   public void setPosicion(PVector posicion){
     this.posicion=posicion;
   }
