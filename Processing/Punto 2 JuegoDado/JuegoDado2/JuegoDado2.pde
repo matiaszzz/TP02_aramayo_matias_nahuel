@@ -3,7 +3,7 @@ private Tablero tablero;
 
 public void setup() {
   size(700, 700);
-  dado = new Dado(new PVector(210, 210), 0);
+  dado = new Dado(new PVector(210, 210), 0,257,258);
   tablero = new Tablero(new PVector(0, 0), 700, 700);
 }
 
