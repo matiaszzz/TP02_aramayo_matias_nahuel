@@ -1,10 +1,12 @@
 private Asteroide asteroide;
 private Enemigo enemigo;
+private Nave nave;
 
 void setup() {
   size(1000,1000);
   asteroide = new Asteroide(new PVector (0, 350), new PVector(5,0));
-  enemigo = new Enemigo(new PVector (width/2-150,10));
+  enemigo = new Enemigo(new PVector (350,10));
+  nave = new Nave(new PVector(425,800));
 }
 
 void draw() {
@@ -12,4 +14,5 @@ void draw() {
   asteroide.display();
   asteroide.mover();
   enemigo.display();
+  nave.display();
 }
