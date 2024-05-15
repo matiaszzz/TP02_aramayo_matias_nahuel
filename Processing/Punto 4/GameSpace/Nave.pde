@@ -1,4 +1,4 @@
-class Nave extends GameObject implements IDisplayable {
+class Nave extends GameObject implements IDisplayable, IMoveable, IController{
   public Nave(PVector posicion) {
     super(posicion);
   }
@@ -7,5 +7,9 @@ class Nave extends GameObject implements IDisplayable {
   }
 
   public void display() {
+  }
+  public void mover(){
+  }
+  public void readCommand(){
   }
 }
